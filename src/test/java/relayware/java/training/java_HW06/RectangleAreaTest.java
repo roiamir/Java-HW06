@@ -28,14 +28,12 @@ public class RectangleAreaTest extends TestCase {
 			assertEquals("Negative Value -1 is not valid for rectangle", e.getMessage());
 		}
 	}
+
+//	@Test (expected=NegativeValueException.class)
+//	public void testCalcArea_ExceptionExpected() {
+//		RectangleArea ra = new RectangleArea();
+//			ra.calcArea(-1, 1);
+//	}
 	
-	@Test(expected = NegativeValueException.class)
-	public void testCalcArea_ExceptionExpected()  {
-		RectangleArea ra = new RectangleArea();
-		try {
-			ra.calcArea(1, 1);
-		} catch (NegativeValueException e) {
-			// TODO Auto-generated catch block
-		}
-	}
+
 }
